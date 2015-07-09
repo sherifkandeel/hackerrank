@@ -35,6 +35,7 @@ while True:
 print sortedarray
 
 #Example:
+#6
 #xeng
 #abdallah
 #rodio
