@@ -35,7 +35,6 @@ def encode(p, k, s):
 
 
 print encode([1, 3, 4, 2], 5, "abcd")
-
 for i in range(10):
     a = [i+1 for i in range(random.randint(1,50))]
     random.shuffle(a)
