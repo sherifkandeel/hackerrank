@@ -1,3 +1,4 @@
+import sys, resource
 class node:
     def __init__(self, value, index):
         self.index = index
@@ -15,6 +16,8 @@ class node:
     def add_sum(self, summation):
         self.summation = summation
 
+resource.setrlimit(resource.RLIMIT_STACK, (2**29,-1))
+sys.setrecursionlimit(10**6)
 
 
 count = int(raw_input())
@@ -42,14 +45,14 @@ def sum_tree(root, index):
     summ = root.value
     for c in root.connections:
         if c.index != index:
-           summ += sum_tree(c, root.index)
+            summ += sum_tree(c, root.index)
     root.summation = summ
     return summ
 
 
 sum_tree(nodes[0], 0)
 treesum = nodes[0].summation #Treesum lol
-minimum = 9999999
+minimum = sum(values)
 def get_minimum(root, index):
     global minimum
     for c in root.connections:
@@ -85,5 +88,4 @@ print minimum
 
 # for node in nodes:
 #     print "%d: %d"%(node.index, node.summation)
-
 
