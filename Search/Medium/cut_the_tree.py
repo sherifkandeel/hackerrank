@@ -1,45 +1,91 @@
+import sys, resource
 class node:
-    def __init__(self, value):
+    def __init__(self, value, index):
+        self.index = index
         self.value = value
-        self.children = []
+        self.connections = []
+        self.summation  = 0
 
-    def add_child(self, obj):
-        self.children.append(obj)
+    def add_connection(self, obj):
+        self.connections.append(obj)
+
+    def remove_connection(self, obj):
+        if obj in self.connections:
+            self.connections.remove(obj)
+        
+    def add_sum(self, summation):
+        self.summation = summation
+
+resource.setrlimit(resource.RLIMIT_STACK, (2**29,-1))
+sys.setrecursionlimit(10**6)
 
 
-n = int(raw_input()) 
+count = int(raw_input())
 values = map(int, raw_input().split(' '))
+nodes = []
+edges = []
+for i in range(count):
+    nodes.append(node(values[i], i))
 
-edges = {}
-for i in range(n-1):
-    k,v = map(int, raw_input().split(' '))
-    if k in edges:
-        edges[k].append(v)
-    else:
-        edges[k] = [v] 
-print edges
+for i in range(count-1):
+    inp = raw_input()
+    edges.append(inp)
+    a, b = map(int, inp.split(' '))
+    nodes[a-1].add_connection(nodes[b-1])
+    nodes[b-1].add_connection(nodes[a-1])
 
-
-root = node(0)
-child1 = node(1)
-child2 = node(2)
-child3 = node(3)
-child4 = node(4)
-child1.add_child(child3)
-child1.add_child(child4)
-root.add_child(child1)
-root.add_child(child2)
+def remove_edge(nodelist,edge_string):
+    a, b = map(int, edge_string.split(' '))
+    nodelist[a-1].remove(nodelist[b-1])
+    nodelist[b-1].remove(nodelist[a-1])
 
 
-def traverse(root):
-    if not root:
-        return
-    print root.value
-    for c in root.children:
-        traverse(c)
-    return
+def sum_tree(root, index):
+    # print root.index
+    summ = root.value
+    for c in root.connections:
+        if c.index != index:
+            summ += sum_tree(c, root.index)
+    root.summation = summ
+    return summ
 
-traverse(root)
+
+sum_tree(nodes[0], 0)
+treesum = nodes[0].summation #Treesum lol
+minimum = sum(values)
+def get_minimum(root, index):
+    global minimum
+    for c in root.connections:
+        if c.index != index:
+            # print "at node %d, %d, %d, %d"%(c.index, treesum, root.summation, c.summation)
+            difference = abs(treesum - c.summation)
+            difference = abs(c.summation - difference)
+            if difference < minimum:
+                minimum = difference
+            get_minimum(c, root.index)
 
 
+get_minimum(nodes[0], 0)
+print minimum
+
+# def traverse(root, index):
+#     print root.index
+#     raw_input()
+#     for c in root.connections:
+#         if c.index == index:
+#             print "skipping"
+#         else:
+#             traverse(c, root.index)
+#     return
+#traverse(nodes[0], 0)
+
+
+
+#Traverse check
+# for node in nodes:
+#     for connection in node.connections:
+#         print "%d - > %d" %(node.index, connection.index)
+
+# for node in nodes:
+#     print "%d: %d"%(node.index, node.summation)
 
