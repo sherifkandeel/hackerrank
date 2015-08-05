@@ -1,8 +1,8 @@
-public class Preorder_Traversal {
+void Preorder(Node root){
+    if (root == null)
+        return;
+    System.out.print(root.data+" ");
+    Preorder(root.left);
+    Preorder(root.right);
 
-    public static void main(String[] args) {
-        System.out.print("something");
-
-    // write your code here
-    }
 }
