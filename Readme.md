@@ -15,7 +15,6 @@ You can find the problem by its name under the category folder as categorized by
 
 
 
-You can find contests on contests repo https://github.com/sherifkandeel/algorithms_contests
 
 Related Repos:
 - [ ] [Programming Contests] (#https://github.com/sherifkandeel/algorithms_contests)
