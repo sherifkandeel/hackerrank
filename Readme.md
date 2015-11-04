@@ -12,9 +12,11 @@ You can find the problem by its name under the category folder as categorized by
 - [ ] [Search] (#s)
 - [ ] [Sorting] (#s)
 - [ ] [Strings] (#s)
-<br/>
+
+
+
 You can find contests on contests repo https://github.com/sherifkandeel/algorithms_contests
 
 Related Repos:
-- [] [Programming Contests] (#https://github.com/sherifkandeel/algorithms_contests)
-- [] [Leetcode Problems] (#https://github.com/sherifkandeel/leetcode)
+- [ ] [Programming Contests] (#https://github.com/sherifkandeel/algorithms_contests)
+- [ ] [Leetcode Problems] (#https://github.com/sherifkandeel/leetcode)
