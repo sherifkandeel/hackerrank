@@ -17,5 +17,5 @@ You can find the problem by its name under the category folder as categorized by
 
 
 Related Repos:
-- [ ] [Programming Contests] (#https://github.com/sherifkandeel/algorithms_contests)
-- [ ] [Leetcode Problems] (#https://github.com/sherifkandeel/leetcode)
+- [ ] [url Programming Contests] (https://github.com/sherifkandeel/algorithms_contests)
+- [ ] [url Leetcode Problems] (https://github.com/sherifkandeel/leetcode)
