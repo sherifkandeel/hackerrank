@@ -1,3 +1,4 @@
 This is my attempt to solving different problems on www.hackerrank.com
-You can find contests on contests repo
+\n
+You can find contests on contests repo https://github.com/sherifkandeel/algorithms_contests
 
