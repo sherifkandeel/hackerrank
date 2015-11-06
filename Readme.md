@@ -4,7 +4,7 @@ The Categories I attempt to solve in are Algorithms and Data Structures.
 You can find the problem by its name under the category folder as categorized by hackerrank, The Cateogires are:
 <br/>
 <br/>
-[Algorithms:] (#s)
+Algorithms:
 - [ ] [    Dynamic Programming] (#s)
 - [ ] [    Graphs] (#s)
 - [ ] [    Greedy] (#s)
@@ -17,12 +17,12 @@ You can find the problem by its name under the category folder as categorized by
 
 <br/>
 <br/>
-[Data Structures:] (#s)
+Data Structures:
 - [ ] [   Trees] (#s) 
 
 <br/>
 <br/>
-[Artificial Intelligence:] (#s)
+Artificial Intelligence:
 - [ ] [    Bot Building] (#s)
 
 
