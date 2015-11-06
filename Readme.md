@@ -4,10 +4,6 @@ The Categories I attempt to solve in are Algorithms and Data Structures.
 You can find the problem by its name under the category folder as categorized by hackerrank, The Cateogires are:
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
 [Algorithms:] (#s)
 - [ ] [    Dynamic Programming] (#s)
 - [ ] [    Graphs] (#s)
@@ -19,13 +15,19 @@ You can find the problem by its name under the category folder as categorized by
 - [ ] [    Sorting] (#s)
 - [ ] [    Strings] (#s)
 
+<br/>
+<br/>
 [Data Structures:] (#s)
 - [ ] [   Trees] (#s) 
 
+<br/>
+<br/>
 [Artificial Intelligence:] (#s)
 - [ ] [    Bot Building] (#s)
 
 
+<br/>
+<br/>
 Related Repos:
 - [ ] [Programming Contests] (https://github.com/sherifkandeel/algorithms_contests)
 - [ ] [Leetcode Problems] (https://github.com/sherifkandeel/leetcode)
