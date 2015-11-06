@@ -3,7 +3,7 @@ This is my attempt to solving different problems on www.hackerrank.com
 The Categories I attempt to solve in are Algorithms and Data Structures.
 You can find the problem by its name under the category folder as categorized by hackerrank, The Cateogires are:
 <br/>
--[Algorithms:] (#s)
+[Algorithms:] (#s)
 - [ ] [    Dynamic Programming] (#s)
 - [ ] [    Graphs] (#s)
 - [ ] [    Greedy] (#s)
@@ -14,10 +14,10 @@ You can find the problem by its name under the category folder as categorized by
 - [ ] [    Sorting] (#s)
 - [ ] [    Strings] (#s)
 
--[Data Structures:] (#s)
+[Data Structures:] (#s)
 - [ ] [   Trees] (#s) 
 
--[Artificial Intelligence:] (#s)
+[Artificial Intelligence:] (#s)
 - [ ] [    Bot Building] (#s)
 
 
