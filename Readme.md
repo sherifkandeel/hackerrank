@@ -14,7 +14,11 @@ You can find the problem by its name under the category folder as categorized by
 - [ ] [    Sorting] (#s)
 - [ ] [    Strings] (#s)
 
+- [ ] [Data Structures:] (#s)
+- [ ] [   Trees] (#s) 
 
+- [ ] [Artificial Intelligence:] (#s)
+- [ ] [    Bot Building]
 
 
 Related Repos:
