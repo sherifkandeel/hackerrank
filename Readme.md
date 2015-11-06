@@ -3,6 +3,10 @@ This is my attempt to solving different problems on www.hackerrank.com
 The Categories I attempt to solve in are Algorithms and Data Structures.
 You can find the problem by its name under the category folder as categorized by hackerrank, The Cateogires are:
 <br/>
+<br/
+<br/
+<br/
+<br/
 [Algorithms:] (#s)
 - [ ] [    Dynamic Programming] (#s)
 - [ ] [    Graphs] (#s)
